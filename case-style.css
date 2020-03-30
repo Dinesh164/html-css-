@@ -1,0 +1,108 @@
+body {
+    background-image: linear-gradient(to bottom left , rgb(18, 243, 224), rgb(127, 17, 230));
+}
+.header-right {
+    float:right;
+}
+.header-element , .header-left {
+    text-decoration: none;
+    padding: 10px 10px;
+}
+.header-element:hover, .header-left:hover {
+    background-color: #f2f2f2;
+}
+.login-fields {
+    position: absolute;
+    top:15%;right:5%;text-align:center;
+    background-color: white;
+    width: 35%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow:10px 10px 5px grey;
+}
+input[type=text] , select {
+    width: 60%;
+        padding: 12px 20px;
+        background-color: #f2f2f2;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+}
+input[type=submit] {
+    width: 60%;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+input[type=submit]:hover {
+    background-color: #2B3F45;
+}
+.content-area {
+    position: absolute; top:30%; left:8%;
+    text-align: left;
+    padding: 15px;
+    width:45%;
+    line-height: 24px;
+}
+.second-heading {
+    color:white;
+    font-size:30px;
+    padding:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+}
+.text-area {
+    color:white;
+}
+.See-pricing {
+    border-radius:25px;
+    color: white; cursor: pointer;
+    background-color: #45fa0e;
+    padding: 14px 20px;
+}
+.See-pricing:hover {
+    background-color: #2B3F45;
+}
+#toggle {
+    float: right;
+    display:none;
+}
+label {
+    margin:0 40px 0 0;
+    font-size:28px;
+    line-height:70px;
+    display:none;
+  }
+@media only screen and (max-width:600px) {
+    .login-fields {
+        position: absolute;
+        top:65%;right:35%;
+        width: 50%;
+    }
+    .content-area {
+        position: absolute;
+        top:10%; right:15%;
+        padding:5px 5px;
+        width:50%;
+    }
+    .header-right {
+        display:none;
+    }
+    .header-element {
+        display:block;
+        border-bottom: 1px solid #eaeaeb;
+        margin:0;
+    }
+    label {
+        display:block;
+        cursor:pointer;
+        float:right;
+        font-size: 26px;
+        }
+    #toggle:checked ~ span {
+        display: block;
+    }   
+}
